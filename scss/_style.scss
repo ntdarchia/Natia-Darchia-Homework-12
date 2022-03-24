@@ -1,4 +1,67 @@
-h1 {
-    font-size: 30px;
-    color: lightblue;
+// Header Section
+.nav-wrapper {
+    @include display-flex (space-around, center, row);
+    padding-top: $header-padding-top;
+    margin-bottom: 50px;
+    a {
+        color: $navigation-color;
+        text-transform: uppercase;
+        font-size: $navigation-font-size;
+        transition: color 0.5s;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    ul {
+        @include display-flex (space-between, center, row);
+        li {
+            margin-right: 30px;
+        } 
+    }
 }
+// Section 1
+.container {
+    max-width: $main-container-size;
+    width: 100%;
+    margin: 0px auto;
+    background-color: powderblue; 
+}
+    
+.section-1 {
+    margin-bottom: 50px;
+    form {
+        display: flex;
+        height: 300px;
+        .textarea-wrapper {
+            width: 70%;
+            margin-right: 20px;
+            textarea {
+                width: 100%;
+                height: 100%;
+                resize: none;
+            }
+        }
+        .inputs-wrapper {
+            width: 30%;
+            @include display-flex(space-between, center, column);
+            input, .sendBtn {
+                width: 100%;
+                height: 60px;
+            }
+        }
+        textarea, input {
+            outline-color: $navigation-color;
+        }
+        .sendBtn {
+            border: none;
+            background-color: $navigation-color;
+            color: white;
+            transition: color 0.5s;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+// Section 2
