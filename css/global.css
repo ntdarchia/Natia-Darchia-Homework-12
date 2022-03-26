@@ -97,6 +97,10 @@ a {
           box-shadow: 0 0px 5px 0px grey;
 }
 
+.headerDiv .burgerMenu {
+  display: none;
+}
+
 .headerDiv .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -5,6 +5,9 @@
     top: 0;
     background-color: #fff;
     box-shadow: $box-shadow;
+    .burgerMenu {
+        display: none;
+    }
     .nav-wrapper {
         @include display-flex (space-around, center, row);
         padding-top: $header-padding-top;
@@ -22,10 +25,9 @@
             li {
                 margin-right: 30px;
             } 
+            }
         }
-    }
-}
-
+   }
 // Section 1
 .container {
     max-width: $main-container-size;
@@ -70,7 +72,6 @@
         }
     }
 }
-
 // Section 2
 .sectionTitle {
     margin-bottom: 50px;
