@@ -5,14 +5,17 @@
     align-items: $align;
     flex-direction: $direction;
 }
-@mixin text-style ($size, $color, $height, $align) {
+@mixin text-style ($font, $weight, $size, $color, $height, $align) {
+    font-family: $font;
+    font-weight: $weight;
     font-size: $size;
     color: $color;
     line-height: $height;
     text-align: $align;
 }
-@mixin box-text-style ($color, $align, $size) {
-    color: $color;
-    text-align: $align;
-    font-size: $size;
+@mixin link-style ($font, $size, $weight, $color) {
+   font-family: $font;
+   font-size: $size;
+   font-weight: $weight;
+   color: $color;
 }

@@ -52,6 +52,42 @@ a {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Thin.eot");
+  src: url("../fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto-Thin.ttf") format("truetype"), url("../fonts/Roboto-Thin.svg#Roboto-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 .headerDiv {
   width: 100%;
   position: fixed;
@@ -81,9 +117,11 @@ a {
 }
 
 .headerDiv .nav-wrapper a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
   color: #5863f8;
   text-transform: uppercase;
-  font-size: 20px;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
@@ -189,6 +227,8 @@ a {
 }
 
 .sectionTitle h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 22px;
   color: #5863f8;
   line-height: 80px;
@@ -197,6 +237,8 @@ a {
 }
 
 .sectionTitle .p-1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 40px;
   color: #5a5454;
   line-height: 80px;
@@ -204,6 +246,8 @@ a {
 }
 
 .sectionTitle .p-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 18px;
   color: #747474;
   line-height: 28px;
@@ -248,16 +292,22 @@ a {
 }
 
 .box-wrapper .box-1 .box-body h2, .box-wrapper .box-2 .box-body h2, .box-wrapper .box-3 .box-body h2, .box-wrapper .box-4 .box-body h2, .box-wrapper .box-5 .box-body h2, .box-wrapper .box-6 .box-body h2 {
-  color: #fff;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 18px;
-  margin-bottom: 10px;
+  color: #fff;
+  line-height: 10px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .box-wrapper .box-1 .box-body p, .box-wrapper .box-2 .box-body p, .box-wrapper .box-3 .box-body p, .box-wrapper .box-4 .box-body p, .box-wrapper .box-5 .box-body p, .box-wrapper .box-6 .box-body p {
-  color: #fff;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 15px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -265,9 +315,12 @@ a {
   border: none;
   width: 131px;
   height: 45px;
-  color: #fff;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 15px;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
   background: url(../images/btn.png);
   cursor: pointer;
   display: block;
@@ -276,9 +329,12 @@ a {
 
 .box-wrapper .box-1 .box-body .readMoreBtn:active, .box-wrapper .box-2 .box-body .readMoreBtn:active, .box-wrapper .box-3 .box-body .readMoreBtn:active, .box-wrapper .box-4 .box-body .readMoreBtn:active, .box-wrapper .box-5 .box-body .readMoreBtn:active, .box-wrapper .box-6 .box-body .readMoreBtn:active {
   background: url(../images/hoverBtn.png);
-  color: #4b647e;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 15px;
+  color: #4b647e;
+  line-height: 15px;
+  text-align: center;
 }
 
 .box-wrapper .box-1 {
@@ -335,6 +391,8 @@ a {
 }
 
 .footerDiv h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 16px;
   color: #747474;
   line-height: 20px;
@@ -343,6 +401,8 @@ a {
 }
 
 .footerDiv p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   color: #747474;
   line-height: 20px;
@@ -389,6 +449,9 @@ a {
 }
 
 .footerDiv .usefulLinks li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
   color: #5863f8;
   -webkit-transition: color, 0.5s;
   transition: color, 0.5s;

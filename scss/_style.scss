@@ -10,9 +10,8 @@
         padding-top: $header-padding-top;
         margin-bottom: 20px;
         a {
-            color: $main-color;
+            @include link-style ($roboto-font, $navigation-font-size, normal, $main-color);
             text-transform: uppercase;
-            font-size: $navigation-font-size;
             transition: color 0.5s;
         &:hover {
             color: $hover-color;
@@ -76,14 +75,14 @@
 .sectionTitle {
     margin-bottom: 50px;
     h2 {
-        @include text-style (22px, $main-color, 80px, center);
-        margin-bottom: 10px;
+        @include text-style ($roboto-font, normal, 22px, $main-color, 80px, center);
+        margin-bottom: 10px;        
     }
     .p-1 {
-        @include text-style (40px, #5a5454, 80px, center);
+        @include text-style ($roboto-font, normal, 40px, #5a5454, 80px, center);
     }
     .p-2 {
-        @include text-style (18px, #747474, 28px, center);
+         @include text-style ($roboto-font, normal, 18px, #747474, 28px, center);
     }
 }
 .box-wrapper {
@@ -105,25 +104,25 @@
         }
         .box-body {
             h2 {
-                @include box-text-style (#fff, center, 18px);
-                margin-bottom: 10px
+                @include text-style ($roboto-font, normal, 18px, #fff, 10px, center);
+                margin-bottom: 15px;
             }
             p {
-                @include box-text-style (#fff, center, 15px);
+                @include text-style ($roboto-font, normal, 15px, #fff, 20px, center);
                 margin-bottom: 30px;
             }
             .readMoreBtn {
                 border: none;
                 width: 131px;
                 height: 45px;
-                @include box-text-style (#fff, center,15px);
+                @include text-style ($roboto-font, normal, 15px, #fff, 15px, center);
                 background: url(../images/btn.png);
                 cursor: pointer;
                 display: block;
                 margin: auto;
             &:active {
                 background: url(../images/hoverBtn.png);
-                @include box-text-style (#4b647e, center, 15px)
+                @include text-style ($roboto-font, normal, 15px, #4b647e, 15px, center);
                 }
             }
         }
@@ -156,11 +155,11 @@
     padding: 10px;
     @include display-flex (space-around, 0, row);
     h2 {
-        @include text-style (16px, #747474, 20px, left);
+         @include text-style ($roboto-font, normal, 16px, #747474, 20px, left);
         margin-bottom: 20px;
     }
     p {
-        @include text-style (14px, #747474, 20px, left);
+         @include text-style ($roboto-font, normal, 14px, #747474, 20px, left);
     }
     .contactInfo {
         li {
@@ -184,7 +183,7 @@
         li {
             margin-bottom: 15px;
             a {
-                color: $main-color;
+                @include link-style ($roboto-font, 14px, normal, $main-color);
                 transition: color, 0.5s;
             &:hover {
                 color: $hover-color;
